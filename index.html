@@ -32,14 +32,18 @@
 
         <nav class="h100">
             <ul class="header__nav-list">
-                <li class="header__nav-item"><a class="white-link header__link header__link--active" href="/">Employers</a></li>
-                <li class="header__nav-item"><a class="white-link header__link" href="/job-seeker.html">Job Seeker</a>
+                <li class="header__nav-item"><a class="white-link header__link header__link--active"
+                                                href="/">Employers</a></li>
+                <li class="header__nav-item "><a class="white-link header__link"
+                                                 href="/job-seeker.html">Job Seeker</a>
                 </li>
                 <li class="header__nav-item"><a class="white-link header__link" href="#">Community</a></li>
                 <li class="header__nav-item"><a class="white-link header__link" href="#">Resources</a></li>
 
                 <li class="header__button-hamb">
-                    <button class="blue-button header__button">Get Early Access</button>
+                    <a href="/sign-up.html">
+                        <button class="blue-button header__button">Get Early Access</button>
+                    </a>
                 </li>
             </ul>
 
@@ -57,7 +61,7 @@
     <section class="post-job">
         <div class="wrapper">
             <header class="post-job__head">
-                <span class="tag"><span>Public beta</span></span>
+                <span class="tag">Public beta</span>
                 <h1 class="white-title white-title--centered post-job__title">Post jobs, get candidates, for free.</h1>
             </header>
             <p class="gray-text post-job__subtitle">Futrwrk simplifies the process of managing candidate automation,
@@ -69,7 +73,7 @@
                     <button class="dark-button-stable">Get Early Access</button>
                 </a>
                 </li>
-                <li><a href="#">
+                <li><a href="https://discord.gg/PnzT9M9e" target="_blank">
                     <button class="dark-button-stable">
                         <svg class="button__icon">
                             <use xlink:href="./assets/images/common/icons-sprite.svg#discord"></use>
@@ -84,8 +88,8 @@
     <section class="example">
         <div class="wrapper-med example__wrapper">
             <ul class="example__switch">
-                <li></li>
-                <li></li>
+                <li onclick="switchTheme(true)"></li>
+                <li onclick="switchTheme(false)"></li>
             </ul>
 
             <div class="card-bordered example__example">
@@ -98,7 +102,7 @@
     <section class="get-candidates">
         <div class="wrapper">
             <header class="get-candidates__head">
-                <span class="tag"><span>How it works</span></span>
+                <span class="tag">How it works</span>
                 <h2 class="white-title white-title--centered get-candidates__title">Create. Post. Get Candidates.</h2>
             </header>
             <p class="gray-text get-candidates__subtitle">Auto Apply helps identify the ideal candidate through a
@@ -149,14 +153,16 @@
     <section class="vet">
         <div class="wrapper-med">
             <h3 class="white-title-lined">Big things come in small packages.</h3>
-            <p class="gray-text subtitle vet__desc">Futrwrk simplifies the process of managing candidate automation, allowing you
+            <p class="gray-text subtitle vet__desc">Futrwrk simplifies the process of managing candidate automation,
+                allowing you
                 to
                 efficiently vet potential applicants with minimal effort.</p>
 
             <ul class="cards vet__list">
                 <li class="cards__card-long">
                     <div class="cards__desc">
-                        <img class="cards__img" src="./assets/images/employers/vet1.svg" alt="Vetting Candidates Step 1">
+                        <img class="cards__img" src="./assets/images/employers/vet1.svg"
+                             alt="Vetting Candidates Step 1">
                         <h4 class="card-title">Keep Track of Candidates</h4>
                         <p class="card-desc cards__text">It's simple to keep tabs on and manage potential candidates for
                             each job offer, or get an overview of everyone who has applied to all available jobs.</p>
@@ -165,13 +171,15 @@
                         </a>
                     </div>
 
-                    <img class="cards__banner" src="./assets/images/employers/candidates-list.png" alt="Candidates list">
+                    <img class="cards__banner" src="./assets/images/employers/candidates-list.png"
+                         alt="Candidates list">
 
                 </li>
 
                 <li class="cards__card-long">
                     <div class="cards__desc">
-                        <img class="cards__img" src="./assets/images/employers/vet2.png" alt="Vetting Candidates Step 1">
+                        <img class="cards__img" src="./assets/images/employers/vet2.png"
+                             alt="Vetting Candidates Step 1">
                         <h4 class="card-title">Schedule Job Posts</h4>
                         <p class="card-desc cards__text">It's simple to keep tabs on and manage potential candidates for
                             each job offer, or get an overview of everyone who has applied to all available jobs.</p>
@@ -187,7 +195,8 @@
 
                 <li class="cards__card">
                     <div class="cards__desc">
-                        <img class="cards__img" src="./assets/images/employers/vet3.svg" alt="Vetting Candidates Step 1">
+                        <img class="cards__img" src="./assets/images/employers/vet3.svg"
+                             alt="Vetting Candidates Step 1">
                         <h4 class="card-title">Comments & Log</h4>
                         <p class="card-desc cards__text">It's simple to keep tabs on and manage potential candidates for
                             each job offer, or get an overview of everyone who has applied to all available jobs.</p>
@@ -204,7 +213,8 @@
                 <li class="cards__card">
 
                     <div class="cards__desc">
-                        <img class="cards__img" src="./assets/images/employers/vet4.svg" alt="Vetting Candidates Step 1">
+                        <img class="cards__img" src="./assets/images/employers/vet4.svg"
+                             alt="Vetting Candidates Step 1">
                         <h4 class="card-title">Candidate Tracking Pipeline</h4>
                         <p class="card-desc cards__text">It's simple to keep tabs on and manage potential candidates for
                             each job offer, or get an overview of everyone who has applied to all available jobs.</p>
@@ -223,11 +233,14 @@
 
     <section class="more">
         <div class="wrapper-med">
-            <span class="tag tag--light"><span>FEATURES & BENEFITS</span></span>
-            <h3 class="black-title black-title--centered more__title">But, wait, there’s more!</h3>
-            <p class="gray-text gray-text--centered more__desc">With Auto Apply, Automation goes beyond cutting costs and time. It ensures
-                you
-                always get the right person for the job.</p>
+            <header class="more__head">
+                <span class="tag tag--light">FEATURES & BENEFITS</span>
+                <h3 class="black-title black-title--centered more__title">But, wait, there’s more!</h3>
+                <p class="gray-text gray-text--centered subtitle">With Auto Apply, Automation goes beyond cutting costs
+                    and time. It ensures
+                    you
+                    always get the right person for the job.</p>
+            </header>
 
             <ul class="cards">
                 <li class="cards__card-long cards__card-long--light">
@@ -284,9 +297,10 @@
 
     <section class="review">
         <div class="wrapper-med">
-            <span class="tag"><span>DON’T TAKE OUR WORD FOR IT.</span></span>
+            <span class="tag">DON’T TAKE OUR WORD FOR IT.</span>
             <h3 class="white-title-lined review__title">We Have A Few Fans.</h3>
-            <p class="gray-text subtitle">We’ve injected the power of <span class="highlighted">awesome</span> into Futrwrk.</p>
+            <p class="gray-text subtitle">We’ve injected the power of <span class="highlighted">awesome</span> into
+                Futrwrk.</p>
 
             <ul class="review__list">
                 <li class="review__box">
@@ -380,7 +394,7 @@
                     <button class="dark-button-stable">Get Early Access</button>
                 </a>
                 </li>
-                <li><a href="#">
+                <li><a href="https://discord.gg/PnzT9M9e" target="_blank">
                     <button class="dark-button-stable">
                         <svg class="button__icon">
                             <use xlink:href="./assets/images/common/icons-sprite.svg#discord"></use>
@@ -401,16 +415,16 @@
 
         <ul class="footer__list">
             <li class="footer__title">PLATFORM</li>
-            <li><a class="white-link" href="#">Early Access</a> <span
+            <li><a class="white-link" href="/sign-up.html">Early Access</a> <span
                     class="tag tag--blue tag--small footer__tag">Beta</span></li>
         </ul>
 
         <ul class="footer__list">
             <li class="footer__title">COMPANY</li>
-            <li><a class="white-link" href="#">About Us</a></li>
-            <li><a class="white-link" href="#">Job Seekers</a></li>
-            <li><a class="white-link" href="#">Employers</a></li>
-            <li><a class="white-link" href="#">Press Room</a></li>
+            <li><a class="white-link" href="/job-seeker.html">Job Seekers</a></li>
+            <li><a class="white-link" href="/">Employers</a></li>
+            <li><a class="white-link" href="/pressroom.html">Press Room</a> <span
+                    class="tag tag--blue tag--small footer__tag">New!</span></li>
         </ul>
 
         <ul class="footer__list">
@@ -422,9 +436,9 @@
 
         <ul class="footer__list">
             <li class="footer__title">SOCIAL</li>
-            <li><a class="white-link" href="#">Linkedin</a></li>
-            <li><a class="white-link" href="#">Twitter</a></li>
-            <li><a class="white-link" href="#">Instagram</a></li>
+            <li><a class="white-link" href="https://www.linkedin.com/company/11048055/admin/" target="_blank" referrerpolicy="no-referrer">Linkedin</a></li>
+            <li><a class="white-link" href="https://twitter.com/Futrwrk" target="_blank" referrerpolicy="no-referrer">Twitter</a></li>
+            <li><a class="white-link" href="https://www.instagram.com/futrwrk/" target="_blank" referrerpolicy="no-referrer">Instagram</a></li>
         </ul>
     </div>
 
@@ -439,6 +453,7 @@
 </footer>
 
 <script src="./js/hamburger-menu.js"></script>
+<script src="./js/switch-theme.js"></script>
 <script src="./js/accordion.js"></script>
 </body>
 </html>
